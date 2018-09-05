@@ -13,7 +13,7 @@ body, html {
 body {
     display: grid;
     grid-template-columns: repeat(9, 1fr);
-    grid-template-areas: 
+    grid-template-areas:
         ".  .  hd   hd   hd   hd   hd   hd   ."
         "sd sd main main main main main main .";
 }
@@ -141,7 +141,7 @@ hr {
 @media screen and (max-width: 970px) {
 
     body {
-        grid-template-areas: 
+        grid-template-areas:
         ".  .  hd   hd   hd   hd   hd   hd   hd"
         "sd sd main main main main main main main";
     }
@@ -154,12 +154,12 @@ hr {
 @media screen and (max-width: 760px) {
 
     body {
-        grid-template-areas: 
+        grid-template-areas:
             "hd   hd   hd   hd   hd   hd   hd   hd   hd"
             "main main main main main main main main main"
             ".    .    .    sd   sd   sd   .    .    .";
     }
-
+    
     header, main {
         margin: 0 40px;
     }
