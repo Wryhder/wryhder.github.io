@@ -139,38 +139,38 @@ hr {
 }
 
 @media screen and (max-width: 970px) {
-    .container {
+
+    body {
         grid-template-areas: 
-            "sd  sd main  main main main main main main";
+        ".  .  hd   hd   hd   hd   hd   hd   hd"
+        "sd sd main main main main main main main";
     }
 
-    .main-container {
+    header, main {
         margin: 0 40px 0 20px;
     }
 }
 
 @media screen and (max-width: 760px) {
 
-    .container {
+    body {
         grid-template-areas: 
-            "main  main main  main main main main main main"
-            ". .  .  ft   ft   ft   .    .    .";
+            "hd   hd   hd   hd   hd   hd   hd   hd   hd"
+            "main main main main main main main main main"
+            ".    .    .    sd   sd   sd   .    .    .";
     }
 
-    .main-container {
+    header, main {
         margin: 0 40px;
     }
 
-    .portfolio > div {
+    .portfolio .featured-projects {
         grid-template-columns: repeat(auto-fit, minmax(180px, 1fr));
-    }
-
-    .side-container {
-        grid-area: ft;
     }
 
     .colour-scheme {
         flex-direction: row;
+        justify-content: center;
     }
 
     .colour-scheme div {
@@ -179,17 +179,19 @@ hr {
 }
 
 @media screen and (max-width: 590px) {
-    .main-container {
+
+    header, main {
         margin: 0 15px;
     }
 }
 
 @media screen and (max-width: 480px) {
+
     header {
         display: block;
     }
 
-    header div:nth-child(2) {
+    header .name-desc {
         margin-top: -2em;
     }
 }
