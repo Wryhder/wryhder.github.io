@@ -106,9 +106,9 @@ hr {
 }
 
 .colour-scheme {
+    grid-area: sd;
     display: flex;
     flex-direction: column;
-    justify-content: center;
 }
 
 .colour-scheme div {
@@ -118,24 +118,24 @@ hr {
     align-items: center;
 }
 
-.colour-scheme .colour1,
-.colour-scheme .colour2,
-.colour-scheme .colour3 {
+.colour-scheme .black,
+.colour-scheme .peru,
+.colour-scheme .grey {
     width: 55px;
     height: 55px;
     padding-bottom: 2px;
 }
 
-.colour-scheme .colour1 {
+.colour-scheme .black {
     background-color: rgb(20, 20, 20);;
 }
 
-.colour-scheme .colour2 {
+.colour-scheme .peru {
     background-color: peru;
 }
 
-.colour-scheme .colour3 {
-    background-color: gray;
+.colour-scheme .grey {
+    background-color: grey;
 }
 
 @media screen and (max-width: 970px) {
