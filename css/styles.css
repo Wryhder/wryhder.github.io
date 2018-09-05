@@ -18,8 +18,10 @@ body {
         "sd sd main main main main main main .";
 }
 
-.main-container {
-    grid-area: main;
+header {
+    grid-area: hd;
+    display: flex;
+    justify-content: space-between;
 }
 
 .logo {
@@ -32,7 +34,7 @@ body {
     border-radius: 10px;
 }
 
-header div:nth-of-type(2) {
+header .name-desc {
     text-align: right;
     padding-right: 0.5em;
 }
