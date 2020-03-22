@@ -26,6 +26,19 @@ header {
     justify-content: flex-end;
 }
 
+h1 {
+    margin-top: 1.2em;
+    font-size: 2.5rem;
+}
+
+h2 {
+    font-size: 2em;
+}
+
+h3 {
+    margin-top: -20px;
+}
+
 sup {
     font-size: 0.7rem;
 }
@@ -35,15 +48,6 @@ header .name-desc {
     padding-right: 0.5em;
 }
 
-header h1 {
-    margin-top: 1.2em;
-    font-size: 2.5rem;
-}
-
-header h3 {
-    margin-top: -20px;
-}
-
 main {
     grid-area: main;
 }
@@ -51,10 +55,6 @@ main {
 hr {
     height: 3px;
     background-color: gray;
-}
-
-.portfolio h2 {
-    font-size: 2em;
 }
 
 .portfolio .featured-projects {
