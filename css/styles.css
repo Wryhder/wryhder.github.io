@@ -17,9 +17,7 @@ body, html {
 body {
     display: grid;
     grid-template-columns: repeat(9, 1fr);
-    grid-template-areas:
-        ".  .  hd   hd   hd   hd   hd   hd   ."
-        "sd sd main main main main main main .";
+    grid-template-areas: ".  .  hd   hd   hd   hd   hd   hd   ." "sd sd main main main main main main .";
 }
 
 header {
@@ -82,7 +80,7 @@ hr {
 
 .featured-projects figure {
     padding-bottom: 1.8em;
-    margin: 0;
+    margin: 0; 
 }
 
 .featured-projects figcaption {
@@ -151,6 +149,10 @@ hr {
     color: white;
     transform: rotateY(180deg);
     font: initial;
+}
+
+.flip-card-back p {
+    padding: .5rem;
 }
 
 .buttons a {
@@ -244,32 +246,24 @@ button.view-live:hover {
 }
 
 @media screen and (max-width: 970px) {
-
     body {
-        grid-template-areas:
-        ".  .  hd   hd   hd   hd   hd   hd   hd"
-        "sd sd main main main main main main main";
+        grid-template-areas: ".  .  hd   hd   hd   hd   hd   hd   hd" "sd sd main main main main main main main";
     }
-
     header, main {
         margin: 0 40px 0 20px;
     }
 }
 
 @media screen and (max-width: 760px) {
-
     body {
-        grid-template-areas:
-            "hd   hd   hd   hd   hd   hd   hd   hd   hd"
-            "main main main main main main main main main"
-            ".    .    .    sd   sd   sd   .    .    .";
+        grid-template-areas: "hd   hd   hd   hd   hd   hd   hd   hd   hd" "main main main main main main main main main" ".    .    .    sd   sd   sd   .    .    .";
     }
-    
     header, main {
         margin: 0 40px;
     }
-
     .portfolio .featured-projects {
+        grid-template-columns: repeat(auto-fit, minmax(220px, 1fr));
+    }
     .social-links {
         position: initial;
         transform: initial;
@@ -280,20 +274,16 @@ button.view-live:hover {
 }
 
 @media screen and (max-width: 590px) {
-
     header, main {
         margin: 0 15px;
     }
 }
 
 @media screen and (max-width: 480px) {
-
     header {
         display: block;
     }
-
     header .name-desc {
         margin-top: -2em;
     }
 }
-
