@@ -270,7 +270,9 @@ button.view-live:hover {
     }
 
     .portfolio .featured-projects {
-        grid-template-columns: repeat(auto-fit, minmax(180px, 1fr));
+    .social-links {
+        position: initial;
+        transform: initial;
     }
     .colour-scheme div {
         margin-left: 10px;
