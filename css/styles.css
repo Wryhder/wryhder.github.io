@@ -70,7 +70,7 @@ hr {
 
 .featured-projects figure {
     padding-bottom: 1.8em;
-    margin: 0; 
+    margin: 0;
 }
 
 .featured-projects figcaption {
@@ -229,6 +229,14 @@ button.view-live:hover {
 
 .linkedin i {
     color: grey;
+}
+
+.email i {
+    color: #89c403;
+}
+
+.resume i {
+    color: #7a1022;
 }
 
 @media screen and (max-width: 970px) {
