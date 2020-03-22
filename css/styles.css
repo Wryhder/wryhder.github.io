@@ -109,6 +109,12 @@ hr {
     grid-area: sd;
     display: flex;
     flex-direction: column;
+    position: fixed;
+    top: 35vh;
+    left: 5vw;
+    -webkit-transform: translateY(-50%);
+    -ms-transform: translateY(-50%);
+    transform: translateY(-50%);
 }
 
 .social-links div, .social-links a {
