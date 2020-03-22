@@ -23,21 +23,11 @@ body {
 header {
     grid-area: hd;
     display: flex;
-    justify-content: space-between;
+    justify-content: flex-end;
 }
 
 sup {
     font-size: 0.7rem;
-}
-
-.logo {
-    padding: 0.5em;
-}
-
-.logo img {
-    width: 4em;
-    height: 4em;
-    border-radius: 10px;
 }
 
 header .name-desc {
