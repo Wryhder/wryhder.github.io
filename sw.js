@@ -6,6 +6,7 @@ const urlsToCache = [
   '/',
   '/index.html',
   '/css/styles.css',
+  'https://fonts.googleapis.com/css?family=Audiowide',
   '/js/register-service-worker.js',
   'https://kit.fontawesome.com/a9e82d5d64.js',
   '/assets/Arcade Game.png',
