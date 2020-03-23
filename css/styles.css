@@ -68,6 +68,7 @@ hr {
     list-style-type: none;
     padding: .5rem;
     line-height: 3rem;
+    border-radius: 5px;
 }
 
 .skills li:nth-child(odd) {
