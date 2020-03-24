@@ -321,9 +321,9 @@ button.view-live:hover {
     position: fixed;
     top: 35vh;
     left: 5vw;
-    -webkit-transform: translateY(-50%);
-    -ms-transform: translateY(-50%);
-    transform: translateY(-50%);
+    -webkit-transform: translateY(-30%);
+    -ms-transform: translateY(-30%);
+    transform: translateY(-30%);
 }
 
 .social-links div, .social-links a {
@@ -379,7 +379,7 @@ button.view-live:hover {
 
 @media screen and (max-width: 760px) {
     body {
-        grid-template-areas: "hd   hd   hd   hd   hd   hd   hd   hd   hd" "main main main main main main main main main" ".    .    .    sd   sd   sd   .    .    .";
+        grid-template-areas: "hd   hd   hd   hd   hd   hd   hd   hd   hd" "main main main main main main main main main" "sd    sd    sd    sd   sd   sd   sd    sd    sd";
     }
     header, main {
         margin: 0 40px;
@@ -390,9 +390,13 @@ button.view-live:hover {
     .social-links {
         position: initial;
         transform: initial;
+        flex-direction: row;
+        justify-content: center;
+        margin: 2rem auto;
     }
     .social-links div {
-        margin-left: 10px;
+        margin-top: 2.5rem;
+        padding: 0 8px;
     }
 }
 
