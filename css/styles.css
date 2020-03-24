@@ -69,6 +69,11 @@ a {
     cursor: pointer;
 }
 
+#default-nav a:hover {
+    color: floralwhite;
+    background-color: #7a1022;
+}
+
 .about-nav, .blog-nav {
     padding: 1.4em 0.6em 1em 0.6em;
 }
