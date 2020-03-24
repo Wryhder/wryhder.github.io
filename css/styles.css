@@ -249,6 +249,7 @@ hr {
 .flip-card-front {
     background-color: #bbb;
     color: black;
+    overflow: hidden;
 }
 
 .flip-card-front img {
