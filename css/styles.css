@@ -43,6 +43,10 @@ sup {
     font-size: 0.7rem;
 }
 
+a {
+    text-decoration: none;
+}
+
 header .name-desc {
     text-align: right;
     padding-right: 0.5em;
@@ -228,10 +232,6 @@ button.view-live:hover {
 
 .social-links div span:nth-child(2) {
     color: initial;
-}
-
-.social-links a {
-    text-decoration: none;
 }
 
 .social-links a:hover {
