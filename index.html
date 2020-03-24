@@ -12,13 +12,33 @@
 
     <body>
         <header>
+            <nav id="default-nav">
+                <a href="#about" class="about-nav">ABOUT</a>
+                <a href="#skills" class="portfolio-nav">SKILLS</a>
+                <a href="#projects" class="contact-nav">PROJECTS</a>
+                <a href="#" class="blog-nav">BLOG</a>
+            </nav>
+
+            <nav id="mobile-nav">
+                <label for="hamburger">&#9776;</label>
+                <input type="checkbox" id="hamburger" />
+            
+                <ul>
+                    <li><a href="#about">ABOUT</a></li>
+                    <li><a href="#skills">SKILLS</a></li>
+                    <li><a href="#projects">PROJECTS</a></li>
+                    <li><a href="#social-links">SOCIAL LINKS</a></li>
+                    <li><a href="wryhder.github.io/">BLOG</a></li>
+                </ul>
+            </nav>
+
             <div class="name-desc">
                 <h1>Jemimah Omodior</h1>
                 <h3>FRONT-END WEB DEVELOPER</h3>
             </div>
         </header>
 
-        <aside class="social-links">
+        <aside id="social-links" class="social-links">
             <div class="github">
                 <a href="https://github.com/Wryhder" target="_blank" rel="noreferrer">
                     <span><i class="fab fa-github"></i></span>
@@ -48,7 +68,7 @@
         <main>
             <hr>
 
-            <section class="featured-skills">
+            <section id="skills" class="featured-skills">
                 <h2>Skills</h2>
 
                 <div class="skills">
@@ -66,7 +86,7 @@
                 </div>
             </section>
 
-            <section class="portfolio">
+            <section id="projects" class="portfolio">
                 <h2>Projects</h2>
 
                 <div class="featured-projects">

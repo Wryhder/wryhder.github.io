@@ -22,8 +22,6 @@ body {
 
 header {
     grid-area: hd;
-    display: flex;
-    justify-content: flex-end;
 }
 
 h1 {
@@ -47,7 +45,114 @@ a {
     text-decoration: none;
 }
 
+#default-nav {
+    display: grid;
+    grid-template-columns: repeat(4, 1fr);
+    grid-gap: 2rem;
+    position: fixed;
+    top: 0;
+    right: 15%;
+    font-size: 1.1rem;
+    font-style: italic;
+    text-align: center;
+    z-index: 2;
+}
+
+#default-nav a {
+    text-decoration: none;
+    color: initial;
+    margin-top: -0.5em;
+    background-color: floralwhite;
+    border-radius: 47%;
+    border-color: rgba(0, 0, 0, 0.1);
+    box-shadow: 0 11px 22px rgba(0, 0, 0, 0.20), 0 7px 7px rgba(0, 0, 0, 0.24);
+    cursor: pointer;
+}
+
+.about-nav, .blog-nav {
+    padding: 1.4em 0.6em 1em 0.6em;
+}
+
+.portfolio-nav, .contact-nav {
+    padding: 1.4em 0.6em 1.2em 0.6em;
+}
+
+#mobile-nav {
+    width: 100%;
+    background: #000;
+    position: fixed;
+    top: 0;
+    right: 0;
+    z-index: 1000;
+}
+
+#mobile-nav, #mobile-nav label, #hamburger {
+    display: none;
+}
+
+/* Menu Items */
+
+#mobile-nav ul {
+    list-style-type: none;
+    margin: 0;
+    padding: 0;
+}
+
+#mobile-nav ul li {
+    display: block;
+    padding: 10px;
+    box-sizing: border-box;
+}
+
+#mobile-nav ul li a {
+    color: #fff;
+    text-decoration: none;
+}
+
+@media screen and (max-width: 900px) {
+    nav {
+        right: 2%;
+    }
+}
+
+@media screen and (max-width: 970px) {
+    #default-nav {
+        right: 2%;
+    }
+}
+
+@media screen and (max-width: 659px) {
+    #default-nav {
+        display: none;
+    }
+    #mobile-nav, #mobile-nav input:checked~ul, #mobile-nav li {
+        display: block;
+    }
+    #mobile-nav ul {
+        display: none;
+    }
+    /* Show Hamburger */
+    #mobile-nav label {
+        display: inline-block;
+        color: #fff;
+        background: #a02620;
+        font-style: normal;
+        font-size: 1.2em;
+        padding: 10px;
+    }
+    #mobile-nav li {
+        border-top: 1px solid #333;
+    }
+    #mobile-nav li:nth-child(odd) {
+        background-color: #7a1022;
+    }
+    #mobile-nav li:nth-child(even) {
+        background-color: #89c403;
+    }
+}
+
 header .name-desc {
+    margin-top: 5rem;
     text-align: right;
     padding-right: 0.5em;
 }
