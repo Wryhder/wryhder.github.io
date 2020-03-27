@@ -204,6 +204,7 @@ hr {
 
 .portfolio h2 {
     margin-top: 4rem;
+    margin-bottom: -.7rem;
 }
 
 .featured-projects figure {
@@ -217,7 +218,7 @@ hr {
 
 .featured-projects figcaption p {
     font-size: 1.7em;
-    margin: 0;
+    margin: 2rem 0 0;
     min-height: 86px;
     padding: 8px 0;
 }
