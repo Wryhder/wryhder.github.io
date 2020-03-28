@@ -161,6 +161,9 @@ a {
     #mobile-nav li:nth-child(even) {
         background-color: var(--green);
     }
+    #mobile-nav li:hover {
+        background-color: var(--black);
+    }
 }
 
 header .name-desc {
