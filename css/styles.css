@@ -1,5 +1,11 @@
 :root {
     --box-shadow: 0px 10px 14px -7px #276873;
+    --white: floralwhite;
+    --red: #7a1022;
+    --light-red: #b3596f;
+    --green: #89c403;
+    --light-green: #89c403;
+    --black: #000;
 }
 
 body, html {
@@ -62,7 +68,7 @@ a {
     text-decoration: none;
     color: initial;
     margin-top: -0.5em;
-    background-color: floralwhite;
+    background-color: var(--white);
     border-radius: 47%;
     border-color: rgba(0, 0, 0, 0.1);
     box-shadow: 0 11px 22px rgba(0, 0, 0, 0.20), 0 7px 7px rgba(0, 0, 0, 0.24);
@@ -70,8 +76,8 @@ a {
 }
 
 #default-nav a:hover {
-    color: floralwhite;
-    background-color: #7a1022;
+    color: var(--white);
+    background-color: var(--red);
 }
 
 .about-nav, .blog-nav {
@@ -84,7 +90,7 @@ a {
 
 #mobile-nav {
     width: 100%;
-    background: #000;
+    background: var(--black);
     position: fixed;
     top: 0;
     right: 0;
@@ -111,7 +117,7 @@ a {
 }
 
 #mobile-nav ul li a {
-    color: #fff;
+    color: var(--white);
     text-decoration: none;
 }
 
@@ -140,8 +146,8 @@ a {
     /* Show Hamburger */
     #mobile-nav label {
         display: inline-block;
-        color: #fff;
-        background: #a02620;
+        color: var(--white);
+        background: var(--red);
         font-style: normal;
         font-size: 1.5rem;
         padding: 15px;
@@ -150,10 +156,10 @@ a {
         border-top: 1px solid #333;
     }
     #mobile-nav li:nth-child(odd) {
-        background-color: #7a1022;
+        background-color: var(--red);
     }
     #mobile-nav li:nth-child(even) {
-        background-color: #89c403;
+        background-color: var(--green);
     }
 }
 
@@ -188,11 +194,11 @@ hr {
 
 .skills li:nth-child(odd) {
     color: white;
-    background-color: #7a1022;
+    background-color: var(--red);
 }
 
 .skills li:nth-child(even) {
-    background-color: #89c403;
+    background-color: var(--green);
 }
 
 .portfolio .featured-projects {
@@ -255,7 +261,7 @@ hr {
 
 .flip-card-front {
     background-color: #bbb;
-    color: black;
+    color: var(--black);
     overflow: hidden;
 }
 
@@ -270,13 +276,13 @@ hr {
     left: 25%;
     right: 25%;
     top: 50%;
-    color: white;
+    color: var(--white);
     background-color: rgba(0, 0, 0, 0.5);
 }
 
 .flip-card-back {
     background-color: #0a3857;
-    color: white;
+    color: var(--white);
     transform: rotateY(180deg);
     font: initial;
 }
@@ -291,7 +297,7 @@ hr {
 }
 
 button {
-    color: white;
+    color: var(--white);
     padding: 0.7em;
     border: none;
     border-radius: 8px;
@@ -302,23 +308,23 @@ button {
 }
 
 button.view-source {
-    background: linear-gradient(to bottom, #b3596f 5%, #7a1022 100%);
-    background-color: #b3596f;
+    background: linear-gradient(to bottom, var(--light-red) 5%, var(--red) 100%);
+    background-color: var(--light-red);
 }
 
 button.view-source:hover {
-    background: linear-gradient(to bottom, #7a1022 5%, #b3596f 100%);
-    background-color: #7a1022;
+    background: linear-gradient(to bottom, var(--red) 5%, var(--light-red) 100%);
+    background-color: var(--red);
 }
 
 button.view-live {
-    background: linear-gradient(to bottom, #89c403 5%, #77a809 100%);
-    background-color: #89c403;
+    background: linear-gradient(to bottom, var(--light-green) 5%, var(--green) 100%);
+    background-color: var(--light-green);
 }
 
 button.view-live:hover {
-    background: linear-gradient(to bottom, #77a809 5%, #89c403 100%);
-    background-color: #77a809;
+    background: linear-gradient(to bottom, var(--green) 5%, var(--light-green) 100%);
+    background-color: var(--green);
 }
 
 .social-links {
@@ -368,11 +374,11 @@ button.view-live:hover {
 }
 
 .email i {
-    color: #89c403;
+    color: var(--green);
 }
 
 .resume i {
-    color: #7a1022;
+    color: var(--red);
 }
 
 @media screen and (max-width: 970px) {
