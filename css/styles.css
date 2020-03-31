@@ -330,6 +330,69 @@ button.view-live:hover {
     background-color: var(--green);
 }
 
+.about-copy {
+    padding: 1.2rem;
+    font-family: initial;
+    border-color: rgba(0, 0, 0, 0.1);
+    border-radius: 15px;
+    box-shadow: 0 11px 22px rgba(0, 0, 0, 0.20), 0 7px 7px rgba(0, 0, 0, 0.24);
+}
+
+.about-copy span {
+    font-weight: bold;
+}
+
+#about h2 {
+    margin-top: 6rem;
+}
+
+#about {
+    margin-bottom: 4rem;
+}
+
+/* .collapsible-tidbits {
+    background-color: rgb(255, 255, 255);
+    margin-bottom: 1.5rem;
+}
+
+.collapsible-tidbits ul {
+    list-style-type: none;
+    padding: 0;
+}
+
+.collapsible-tidbits label {
+    font-size: 1.2rem;
+    display: block;
+    cursor: pointer;
+    background: url(menu.png) no-repeat left center;
+    /* padding: 10px 0 10px 50px; */
+}
+
+input#tidbits {
+    display: none;
+}
+
+input:checked+label {
+    background-image: url(close.png);
+}
+
+.tidbits {
+    max-height: 0;
+    overflow: hidden;
+    font-family: 'Oswald', sans-serif;
+    /* padding: 0 0 0 50px; */
+} */
+
+/* Toggle Effect */
+
+/* input:checked~label {
+    background-image: url(close.png);
+}
+
+input:checked~.tidbits {
+    max-height: 100%;
+} */
+
 .social-links {
     grid-area: sd;
     display: flex;
