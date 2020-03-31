@@ -365,7 +365,6 @@ button.view-live:hover {
     display: block;
     cursor: pointer;
     background: url(menu.png) no-repeat left center;
-    /* padding: 10px 0 10px 50px; */
 }
 
 input#tidbits {
@@ -380,7 +379,6 @@ input:checked+label {
     max-height: 0;
     overflow: hidden;
     font-family: 'Oswald', sans-serif;
-    /* padding: 0 0 0 50px; */
 } */
 
 /* Toggle Effect */
