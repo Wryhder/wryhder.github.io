@@ -413,15 +413,18 @@ input:checked~.tidbits {
     margin-bottom: 1.2em;
 }
 
+.social-links a {
+    padding: .3rem;
+}
+
 .social-links div span:nth-child(2) {
     color: initial;
 }
 
 .social-links a:hover {
-    padding: 1.2em;
     box-shadow: var(--box-shadow);
     background-color: palegoldenrod;
-    transition: padding 2s cubic-bezier(.29, 1.01, 1, -0.68);
+    transition: background-color 1s, box-shadow 2s;
 }
 
 .social-links i {
