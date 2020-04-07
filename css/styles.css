@@ -1,3 +1,5 @@
+@import url('https://fonts.googleapis.com/css2?family=Audiowide&family=Baloo+Paaji+2&display=swap');
+
 :root {
     --box-shadow: 0px 10px 14px -7px #276873;
     --white: floralwhite;
@@ -8,12 +10,15 @@
     --black: #000;
 }
 
-body, html {
+html {
+    font-size: 17px;
+}
+
     margin: 0;
     padding: 0;
     height: 100%;
     width: 100%;
-    font-family: 'Audiowide', cursive;
+    font-family: 'Baloo Paaji 2', cursive;
 }
 
 * {
@@ -50,6 +55,14 @@ sup {
 
 a {
     text-decoration: none;
+}
+
+header,
+h1,
+h2,
+h3,
+.social-links {
+    font-family: 'Audiowide', cursive;
 }
 
 #default-nav {
@@ -229,7 +242,7 @@ hr {
 }
 
 .featured-projects figcaption p {
-    font-size: 1.7em;
+    font-size: 1.8rem;
     margin: 2rem 0 0;
     min-height: 86px;
     padding: 8px 0;
@@ -353,6 +366,9 @@ button.view-live:hover {
     border-radius: 15px;
     -webkit-box-shadow: 0 11px 22px rgba(0, 0, 0, 0.20), 0 7px 7px rgba(0, 0, 0, 0.24);
     box-shadow: 0 11px 22px rgba(0, 0, 0, 0.20), 0 7px 7px rgba(0, 0, 0, 0.24);
+
+.about-copy p {
+    font-size: 1.05rem;
 }
 
 .about-copy span {
