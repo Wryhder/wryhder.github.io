@@ -17,6 +17,7 @@ body, html {
 }
 
 * {
+    -webkit-box-sizing: border-box;
     box-sizing: border-box;
 }
 
@@ -71,6 +72,7 @@ a {
     background-color: var(--white);
     border-radius: 47%;
     border-color: rgba(0, 0, 0, 0.1);
+    -webkit-box-shadow: 0 11px 22px rgba(0, 0, 0, 0.20), 0 7px 7px rgba(0, 0, 0, 0.24);
     box-shadow: 0 11px 22px rgba(0, 0, 0, 0.20), 0 7px 7px rgba(0, 0, 0, 0.24);
     cursor: pointer;
 }
@@ -112,6 +114,7 @@ a {
 #mobile-nav ul li {
     display: block;
     padding: 10px;
+    -webkit-box-sizing: border-box;
     box-sizing: border-box;
     text-align: center;
 }
@@ -237,6 +240,7 @@ hr {
     width: 100%;
     height: 270px;
     max-width: 400px;
+    -webkit-perspective: 1000px;
     perspective: 1000px;
 }
 
@@ -245,12 +249,18 @@ hr {
     width: 100%;
     height: 100%;
     text-align: center;
+    -webkit-transition: -webkit-transform 0.6s;
+    transition: -webkit-transform 0.6s;
     transition: transform 0.6s;
+    transition: transform 0.6s, -webkit-transform 0.6s;
+    -webkit-transform-style: preserve-3d;
     transform-style: preserve-3d;
+    -webkit-box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2);
     box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2);
 }
 
 .flip-card:hover .flip-card-inner {
+    -webkit-transform: rotateY(180deg);
     transform: rotateY(180deg);
 }
 
@@ -286,6 +296,7 @@ hr {
 .flip-card-back {
     background-color: #0a3857;
     color: var(--white);
+    -webkit-transform: rotateY(180deg);
     transform: rotateY(180deg);
     font: initial;
 }
@@ -307,25 +318,30 @@ button {
     font-size: 1.1rem;
     font-weight: bold;
     cursor: pointer;
+    -webkit-box-shadow: 0px 10px 14px -7px #276873;
     box-shadow: 0px 10px 14px -7px #276873;
 }
 
 button.view-source {
+    background: -webkit-gradient(linear, left top, left bottom, color-stop(5%, var(--light-red)), to(var(--red)));
     background: linear-gradient(to bottom, var(--light-red) 5%, var(--red) 100%);
     background-color: var(--light-red);
 }
 
 button.view-source:hover {
+    background: -webkit-gradient(linear, left top, left bottom, color-stop(5%, var(--red)), to(var(--light-red)));
     background: linear-gradient(to bottom, var(--red) 5%, var(--light-red) 100%);
     background-color: var(--red);
 }
 
 button.view-live {
+    background: -webkit-gradient(linear, left top, left bottom, color-stop(5%, var(--light-green)), to(var(--green)));
     background: linear-gradient(to bottom, var(--light-green) 5%, var(--green) 100%);
     background-color: var(--light-green);
 }
 
 button.view-live:hover {
+    background: -webkit-gradient(linear, left top, left bottom, color-stop(5%, var(--green)), to(var(--light-green)));
     background: linear-gradient(to bottom, var(--green) 5%, var(--light-green) 100%);
     background-color: var(--green);
 }
@@ -335,6 +351,7 @@ button.view-live:hover {
     font-family: initial;
     border-color: rgba(0, 0, 0, 0.1);
     border-radius: 15px;
+    -webkit-box-shadow: 0 11px 22px rgba(0, 0, 0, 0.20), 0 7px 7px rgba(0, 0, 0, 0.24);
     box-shadow: 0 11px 22px rgba(0, 0, 0, 0.20), 0 7px 7px rgba(0, 0, 0, 0.24);
 }
 
@@ -393,19 +410,30 @@ input:checked~.tidbits {
 
 .social-links {
     grid-area: sd;
+    display: -webkit-box;
+    display: -ms-flexbox;
     display: flex;
+    -webkit-box-orient: vertical;
+    -webkit-box-direction: normal;
+    -ms-flex-direction: column;
     flex-direction: column;
     position: fixed;
     top: 35vh;
     left: 5vw;
     -webkit-transform: translateY(-30%);
-    -ms-transform: translateY(-30%);
     transform: translateY(-30%);
 }
 
 .social-links div, .social-links a {
+    display: -webkit-box;
+    display: -ms-flexbox;
     display: flex;
+    -webkit-box-orient: vertical;
+    -webkit-box-direction: normal;
+    -ms-flex-direction: column;
     flex-direction: column;
+    -webkit-box-align: center;
+    -ms-flex-align: center;
     align-items: center;
 }
 
@@ -422,9 +450,13 @@ input:checked~.tidbits {
 }
 
 .social-links a:hover {
+    -webkit-box-shadow: var(--box-shadow);
     box-shadow: var(--box-shadow);
     background-color: palegoldenrod;
+    -webkit-transition: background-color 1s, -webkit-box-shadow 2s;
+    transition: background-color 1s, -webkit-box-shadow 2s;
     transition: background-color 1s, box-shadow 2s;
+    transition: background-color 1s, box-shadow 2s, -webkit-box-shadow 2s;
 }
 
 .social-links i {
@@ -469,8 +501,14 @@ input:checked~.tidbits {
     }
     .social-links {
         position: initial;
+        -webkit-transform: initial;
         transform: initial;
+        -webkit-box-orient: horizontal;
+        -webkit-box-direction: normal;
+        -ms-flex-direction: row;
         flex-direction: row;
+        -webkit-box-pack: center;
+        -ms-flex-pack: center;
         justify-content: center;
         margin: 2rem auto;
     }
