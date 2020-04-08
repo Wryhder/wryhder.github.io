@@ -379,7 +379,6 @@ button.view-live:hover {
 
 .about-copy {
     padding: 1.2rem;
-    font-family: initial;
     border-color: rgba(0, 0, 0, 0.1);
     border-radius: 15px;
     -webkit-box-shadow: 0 11px 22px rgba(0, 0, 0, 0.20), 0 7px 7px rgba(0, 0, 0, 0.24);
