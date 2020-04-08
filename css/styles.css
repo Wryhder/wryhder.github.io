@@ -306,6 +306,7 @@ hr {
     background-color: #bbb;
     color: var(--black);
     overflow: hidden;
+    line-height: 1.3;
 }
 
 .flip-card-front img {
