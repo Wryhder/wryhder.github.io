@@ -32,7 +32,7 @@ body {
     display: grid;
     grid-template-columns: repeat(9, 1fr);
     grid-template-areas: ".  .  hd   hd   hd   hd   hd   hd   ."
-                         "sd sd main main main main main main .";
+        "sd sd main main main main main main .";
 }
 
 header {
@@ -401,47 +401,6 @@ button.view-live:hover {
 #about {
     margin-bottom: 4rem;
 }
-
-/* .collapsible-tidbits {
-    background-color: rgb(255, 255, 255);
-    margin-bottom: 1.5rem;
-}
-
-.collapsible-tidbits ul {
-    list-style-type: none;
-    padding: 0;
-}
-
-.collapsible-tidbits label {
-    font-size: 1.2rem;
-    display: block;
-    cursor: pointer;
-    background: url(menu.png) no-repeat left center;
-}
-
-input#tidbits {
-    display: none;
-}
-
-input:checked+label {
-    background-image: url(close.png);
-}
-
-.tidbits {
-    max-height: 0;
-    overflow: hidden;
-    font-family: 'Oswald', sans-serif;
-} */
-
-/* Toggle Effect */
-
-/* input:checked~label {
-    background-image: url(close.png);
-}
-
-input:checked~.tidbits {
-    max-height: 100%;
-} */
 
 .social-links {
     grid-area: sd;
