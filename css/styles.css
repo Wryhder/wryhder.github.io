@@ -240,11 +240,12 @@ hr {
     background-color: var(--green);
 }
 
-.portfolio .featured-projects {
+.featured-projects {
     display: grid;
     grid-template-columns: repeat(auto-fit, minmax(250px, 1fr));
     grid-gap: 20px;
     margin: 20px 0;
+    line-height: 1.3;
 }
 
 .portfolio h2 {
@@ -310,7 +311,6 @@ hr {
     background-color: #bbb;
     color: var(--black);
     overflow: hidden;
-    line-height: 1.3;
 }
 
 .flip-card-front img {
@@ -333,7 +333,7 @@ hr {
     color: var(--white);
     -webkit-transform: rotateY(180deg);
     transform: rotateY(180deg);
-    font: initial;
+    overflow-y: scroll;
 }
 
 .flip-card-back p {
