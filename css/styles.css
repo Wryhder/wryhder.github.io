@@ -226,7 +226,7 @@ hr {
 .skills li {
     display: inline;
     list-style-type: none;
-    padding: .5rem;
+    padding: .3rem;
     line-height: 3rem;
     border-radius: 5px;
 }
