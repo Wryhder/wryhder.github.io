@@ -343,6 +343,7 @@ hr {
 .buttons a {
     text-decoration: none;
     color: inherit;
+    font-family: 'Baloo Paaji 2', cursive;
 }
 
 button {
