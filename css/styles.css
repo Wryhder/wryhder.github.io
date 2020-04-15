@@ -324,7 +324,7 @@ hr {
     right: 25%;
     top: 50%;
     color: var(--white);
-    background-color: rgba(0, 0, 0, 0.5);
+    background-color: rgba(0, 0, 0, 0.75);
 }
 
 .flip-card-back {
