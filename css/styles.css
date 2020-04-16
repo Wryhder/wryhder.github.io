@@ -61,12 +61,12 @@ a {
 }
 
 .flared-horizontal-rule-effect hr {
-    border:0;
-    border-bottom:2px solid #BBBBBB;
-    border-left:2px solid #BBBBBB;
-    border-right:2px solid #BBBBBB;
-    height:15px;
-    border-radius:25px;
+    border: 0;
+    border-bottom: 2px solid #BBBBBB;
+    border-left: 2px solid #BBBBBB;
+    border-right: 2px solid #BBBBBB;
+    height: 15px;
+    border-radius: 25px;
     background-color: initial;
 }
 
