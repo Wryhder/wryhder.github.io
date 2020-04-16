@@ -480,7 +480,7 @@ button.view-live:hover {
         -webkit-box-pack: center;
         -ms-flex-pack: center;
         justify-content: center;
-        margin: 2rem auto;
+        margin: 0 auto;
     }
 
     .social-links div {
