@@ -60,6 +60,21 @@ a {
     text-decoration: none;
 }
 
+.flared-horizontal-rule-effect hr {
+    border:0;
+    border-bottom:2px solid #BBBBBB;
+    border-left:2px solid #BBBBBB;
+    border-right:2px solid #BBBBBB;
+    height:15px;
+    border-radius:25px;
+    background-color: initial;
+}
+
+.flared-horizontal-rule-effect hr:nth-of-type(2) {
+    transform: rotate(180deg);
+    margin-top: -10px;
+}
+
 header,
 h1,
 h2,
