@@ -314,7 +314,6 @@ button {
     border: none;
     border-radius: 8px;
     font-size: 1.1rem;
-    font-weight: bold;
     cursor: pointer;
     -webkit-box-shadow: 0px 10px 14px -7px #276873;
     box-shadow: 0px 10px 14px -7px #276873;
@@ -473,6 +472,10 @@ button.view-live:hover {
         -webkit-box-pack: center;
         -ms-flex-pack: center;
         justify-content: center;
+    }
+
+    .featured-projects figcaption p {
+        font-weight: bold;
     }
 
     .social-links {
