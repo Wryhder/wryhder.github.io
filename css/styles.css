@@ -84,6 +84,11 @@ h2,
     font-family: 'Audiowide', cursive;
 }
 
+h3,
+.featured-projects figcaption p {
+    color: rgb(58, 31, 31);
+}
+
 #default-nav {
     display: grid;
     grid-template-columns: repeat(4, 1fr);
@@ -280,6 +285,8 @@ hr {
 
 .featured-projects figcaption p {
     font-size: 1.8rem;
+    font-weight: bold;
+    color: rgb(58, 31, 31);
     margin: 2rem 0 0;
     min-height: 95px;
     padding: 8px 0;
